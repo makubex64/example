@@ -1,14 +1,14 @@
 :root {
-    --atom-size: 180px;
+    --atom-size: 280px;
     --atom-color-hex: #00d8ff;
     --atom-color-rgb: 0, 216, 255;
     --nucleus-size: calc(var(--atom-size) / 8);
     --electron-color-hex: #99f8ff;
     --electron-size : calc(var(--atom-size) / 25);
     --electron-orbit-size : calc(var(--atom-size) / 2.5);
-    --electron-speed : 2.2s;
+    --electron-speed : 3.9s;
     --electron-speed-alpha : 3s;
-    --electron-speed-omega : 1.8s;
+    --electron-speed-omega : 2.8s;
 }
 
 
@@ -18,8 +18,12 @@
     
     width: var(--atom-size);
     height: var(--atom-size);
-    animation: 26s atom infinite cubic-bezier(.4, .25, 0, .45);
+    animation: 26s atom infinite cubic-bezier(.4, .25, .3, .15);
     
+}
+.dolce{
+    display: flex;
+    justify-content: center;
 }
 @keyframes atom {
     0% {    transform: rotate(0deg) scale(1); }
@@ -47,14 +51,14 @@
     background: var(--electron-color-hex); /* var(--atom-color-hex); */
     border-radius: 100%;
     box-shadow: 0 0 3px 0 var(--atom-color-hex);
-    animation: 10s nucleus infinite cubic-bezier(.65, 0, .35, 1);
+    animation: 13s nucleus infinite cubic-bezier(.65, 0, .35, 1);
 }
 @keyframes nucleus {
-    0% { transform: scale(1); }
-    25% { transform: scale(.9); }
-    50% { transform: scale(1); }
+    0% { transform: scale(.6); }
+    25% { transform: scale(.8); }
+    50% { transform: scale(.9); }
     75% { transform: scale(.85); }
-    100% { transform: scale(1); }
+    100% { transform: scale(.6); }
 }
 
 /* Electron Orbit */
