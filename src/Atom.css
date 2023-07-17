@@ -19,11 +19,13 @@
     width: var(--atom-size);
     height: var(--atom-size);
     animation: 26s atom infinite cubic-bezier(.4, .25, .3, .15);
+
     
 }
 .dolce{
     display: flex;
     justify-content: center;
+
 }
 @keyframes atom {
     0% {    transform: rotate(0deg) scale(1); }
@@ -52,6 +54,8 @@
     border-radius: 100%;
     box-shadow: 0 0 3px 0 var(--atom-color-hex);
     animation: 13s nucleus infinite cubic-bezier(.65, 0, .35, 1);
+
+
 }
 @keyframes nucleus {
     0% { transform: scale(.6); }
@@ -74,10 +78,13 @@
     top: 50%;
     margin-top: calc(var(--electron-orbit-size) / -2);
     animation: var(--electron-speed) electron-orbit infinite linear;
+
 }
 .atom > .electron-alpha {
     transform: rotate(60deg);
     animation: var(--electron-speed-alpha) electron-orbit infinite linear;
+
+
 }
 .atom > .electron-omega {
     transform: rotate(-60deg);
@@ -85,39 +92,47 @@
 }
 @keyframes electron-orbit {
     0% {
+
+        box-shadow: inset 2px 4px 6px 4px rgba(var(--atom-color-rgb), .1), inset 2px 4px 6px 4px rgba(var(--atom-color-rgb), .1) ;
         border-top: solid rgba(var(--atom-color-rgb), .5) 1px;
         border-right: solid rgba(var(--atom-color-rgb), .35) 2px;
         border-bottom: solid rgba(var(--atom-color-rgb), .2) 4px;
         border-left: solid rgba(var(--atom-color-rgb), 0) 2px;
     }
     25% {
+        box-shadow: inset 4px 6px 8px 6px rgba(var(--atom-color-rgb), .1), inset 2px 4px 6px 4px rgba(var(--atom-color-rgb), .1) ;
         border-top: solid rgba(var(--atom-color-rgb), .35) 1px;
         border-right: solid rgba(var(--atom-color-rgb), .2) 2px;
         border-bottom: solid rgba(var(--atom-color-rgb), 0) 4px;
         border-left: solid rgba(var(--atom-color-rgb), .5) 2px;
     }
     50% {
+        box-shadow: inset 6px 8px 10px 12px rgba(var(--atom-color-rgb), .1), inset 2px 4px 6px 4px rgba(var(--atom-color-rgb), .1) ;
         border-top: solid rgba(var(--atom-color-rgb), .2) 1px;
         border-right: solid rgba(var(--atom-color-rgb), 0) 2px;
         border-bottom: solid rgba(var(--atom-color-rgb), .5) 4px;
         border-left: solid rgba(var(--atom-color-rgb), .35) 2px;
     }
     75% {
+        box-shadow: inset 12px 14px 16px 18px rgba(var(--atom-color-rgb), .1), inset 2px 4px 6px 4px rgba(var(--atom-color-rgb), .1) ;
         border-top: solid rgba(var(--atom-color-rgb), 0) 1px;
         border-right: solid rgba(var(--atom-color-rgb), .5) 2px;
         border-bottom: solid rgba(var(--atom-color-rgb), .35) 4px;
         border-left: solid rgba(var(--atom-color-rgb), .2) 2px;
     }
     100% {
+        box-shadow: inset 2px 4px 6px 4px rgba(var(--atom-color-rgb), .1), inset 2px 4px 6px 4px rgba(var(--atom-color-rgb), .1) ;
         border-top: solid rgba(var(--atom-color-rgb), .5) 1px;
         border-right: solid rgba(var(--atom-color-rgb), .35) 2px;
         border-bottom: solid rgba(var(--atom-color-rgb), .2) 4px;
         border-left: solid rgba(var(--atom-color-rgb), 0) 2px;
+        
     }
 }
 
 /* Electron Unit */
 .atom [class^="electron"]::after {
+
     content: '';
     display: block;
     width: var(--electron-size);
@@ -141,6 +156,7 @@
     12.5% {
         top: 100%;
         transform: scale(1.5);
+        
     }
     25% {
         left: 100%;
@@ -169,5 +185,8 @@
     100% {
         left: calc(var(--electron-size) / -1);
         transform: scale(1);
+
+
+
     }
 }

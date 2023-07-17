@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.text-brillo {
+  text-shadow: 0 0px 6px rgb(6 182 212 ), 0 0px 1px rgb(6 182 212 ) ;
+}
