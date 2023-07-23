@@ -1,10 +1,33 @@
+import Carousel from 'react-multi-carousel';
+import 'react-multi-carousel/lib/styles.css';
+
 import { projects } from "../Data-Json/Data-Json";
+
+const responsive = {
+  desktop: {
+    breakpoint: { max: 3000, min: 1024 },
+    items: 3,
+    slidesToSlide: 3 // optional, default to 1.
+  },
+  tablet: {
+    breakpoint: { max: 1024, min: 464 },
+    items: 2,
+    slidesToSlide: 2 // optional, default to 1.
+  },
+  mobile: {
+    breakpoint: { max: 464, min: 0 },
+    items: 1,
+    slidesToSlide: 1 // optional, default to 1.
+  }
+};
+
+
 
 export default function Projects(){
     return(
-        <section id="projects" className="text-gray-400 bg-gray-900 body-font">
+      <section id="projects" className="text-gray-400 bg-gray-900 body-font">
       <div className="container px-5 py-10 mx-auto text-center lg:px-40">
-        <div className="flex flex-col w-full mb-20">
+        <div className="flex flex-col w-full ">
           
           <h1 className="sm:text-4xl text-3xl font-medium title-font mb-4 text-white">
             Aplicaciones que he construido
@@ -13,34 +36,64 @@ export default function Projects(){
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo
             facilis repellat ab cupiditate alias vero aliquid obcaecati quisquam
             fuga dolore.
-          </p>
-        </div>
-        <div className="flex flex-wrap -m-4">
-          {projects.map((project) => (
-            <a
-              href={project.link}
-              key={project.image}
-              className="sm:w-1/2 w-100 p-4">
-              <div className="flex relative">
-                <img
-                  alt="gallery"
-                  className="absolute inset-0 w-full h-full object-cover object-center"
-                  src={project.image}
-                />
-                <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-800 bg-gray-900 opacity-0 hover:opacity-100">
-                  <h2 className="tracking-widest text-sm title-font font-medium text-green-400 mb-1">
-                    {project.subtitle}
-                  </h2>
-                  <h1 className="title-font text-lg font-medium text-white mb-3">
-                    {project.title}
-                  </h1>
-                  <p className="leading-relaxed">{project.description}</p>
-                </div>
-              </div>
-            </a>
-          ))}
+          </p>     
+
         </div>
       </div>
+
+      <div className="p-9 ">
+
+        <Carousel        
+        responsive={responsive}
+        infinite={true}
+        keyBoardControl={true}
+        customTransition="all 1.5"
+        transitionDuration={500}
+        containerClass="carousel-container"
+        removeArrowOnDeviceType={["tablet", "mobile"]}
+        dotListClass="custom-dot-list-style"
+        itemClass="carousel-item-padding-40-px"
+
+      >
+
+       {projects.map((project) => {
+        console.log(project)
+
+        return(
+                   <a
+                     href={project.link}
+                     key={project.image}
+                     className="flex space-x-4 max-w-sm hover:shadow-cyan-600 transition duration-200 shadow-lg shadow-cyan-500/50 ">
+                     <div className="flex relative">
+                       <img
+                         alt="gallery"
+                         className="absolute inset-0 w-full h-full object-cover object-center"
+                         src={project.image}
+                       />
+                       <div className=" px-10 py-8 relative z-10 w-full border-2 border-gray-800 bg-gray-900 opacity-0 hover:opacity-90">
+                         <h2 className="hover:opacity-100  text-sm title-font font-medium text-cyan-400 ">
+                           {project.subtitle}
+                         </h2>
+                         <h1 className="hover:opacity-100 title-font text-lg font-medium text-white mb-3">
+                           {project.title}
+                         </h1>
+                         <p className="hover:opacity-100 leading-relaxed">{project.description}</p>
+
+                         {
+                          project.skills.map((skill)=>(
+                              <img className="inline-block me-6 mt-3 rounded-md" style={{width:40, height:40}} src={skill} />
+                            ))
+                         }
+
+       
+                       </div>
+                     </div>
+                   </a>
+                 )})}
+        </Carousel>
+
+      </div>  
+
     </section>
     )
 }
