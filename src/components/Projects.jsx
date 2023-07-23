@@ -30,7 +30,7 @@ export default function Projects(){
         <div className="flex flex-col w-full ">
           
           <h1 className="sm:text-4xl text-3xl font-medium title-font mb-4 text-white">
-            Aplicaciones que he construido
+            Aplicaciones que he construido CON EL CRIO
           </h1>
           <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo
