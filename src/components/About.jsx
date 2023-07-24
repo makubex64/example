@@ -1,6 +1,8 @@
 import AtomComponent from "./AtomComponent"
 import { CodeBracketIcon } from "@heroicons/react/24/outline";
 
+import cv from "./Stoman-Resume.pdf"
+
 
 
 
@@ -38,7 +40,7 @@ export default function About(){
               <span className="text-sm font-semibold"> Let´s Talk </span>
             </a>
 
-            <button className="rounded-none ml-4 inline-flex text-white border-2 border-cyan-600 hover:shadow-cyan-600 transition duration-200 shadow-lg shadow-cyan-500/50 py-2 px-8"> <span className="text-sm font-semibold">Donwload CV</span> </button>
+            <button className="rounded-none ml-4 inline-flex text-white border-2 border-cyan-600 hover:shadow-cyan-600 transition duration-200 shadow-lg shadow-cyan-500/50 py-2 px-8"> <a href={cv} download className="text-sm font-semibold">Donwload CV</a> </button>
             
           </div>
         </div>

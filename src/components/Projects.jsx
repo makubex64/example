@@ -30,7 +30,7 @@ export default function Projects(){
         <div className="flex flex-col w-full ">
           
           <h1 className="sm:text-4xl text-3xl font-medium title-font mb-4 text-white">
-            Aplicaciones que he construido CON EL CRIO
+            Aplicaciones que he construido
           </h1>
           <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo
@@ -63,14 +63,14 @@ export default function Projects(){
                    <a
                      href={project.link}
                      key={project.image}
-                     className="flex space-x-4 max-w-sm hover:shadow-cyan-600 transition duration-200 shadow-lg shadow-cyan-500/50 ">
-                     <div className="flex relative">
+                     className="flex space-x-4 max-w-sm ">
+                     <div className="flex relative ">
                        <img
                          alt="gallery"
                          className="absolute inset-0 w-full h-full object-cover object-center"
                          src={project.image}
                        />
-                       <div className=" px-10 py-8 relative z-10 w-full border-2 border-gray-800 bg-gray-900 opacity-0 hover:opacity-90">
+                       <div className="border-solid border-3 border-cyan-500 absolute  overflow-hidden bg-gradient-to-r from-cyan-950 to-sky-950 transition duration-300  px-10 py-8 relative z-10 w-full border-2 border-gray-800 bg-gray-900 opacity-0 hover:opacity-90">
                          <h2 className="hover:opacity-100  text-sm title-font font-medium text-cyan-400 ">
                            {project.subtitle}
                          </h2>
