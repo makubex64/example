@@ -57,7 +57,6 @@ export default function Projects(){
       >
 
        {projects.map((project) => {
-        console.log(project)
 
         return(
                    <a
@@ -81,7 +80,7 @@ export default function Projects(){
 
                          {
                           project.skills.map((skill)=>(
-                              <img className="inline-block me-6 mt-3 rounded-md" style={{width:40, height:40}} src={skill} />
+                              <img key={skill} className="inline-block me-6 mt-3 rounded-md" style={{width:40, height:40}} src={skill} />
                             ))
                          }
 
