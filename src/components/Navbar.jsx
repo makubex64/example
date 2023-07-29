@@ -1,13 +1,33 @@
 import { FireIcon } from "@heroicons/react/24/outline";
+import { XCircleIcon } from "@heroicons/react/24/outline";
+
 import {useState} from 'react'
+
+import ContactModal from './ContactModal'
 
 
 export default function Navbar(){
 
   const [isOpen, setIsOpen] = useState(false)
+  const [modalOpen, setModalOpen] = useState(false);
+
+  const handleClick = () => {
+    setIsOpen(false);
+  };
+
+
+  const handleOpenModal = () => {
+    setModalOpen(true);
+  };
+
+  const handleCloseModal = () => {
+    setModalOpen(false);
+  };
+
+
 
     return(
-    <header className="bg-gray-800 md:sticky top-0 z-10">
+    <header className="bg-gray-800 sticky md:sticky top-0 z-10">
       <nav className="flex items-center justify-between flex-wrap p-4">
 
      <div className="flex items-center flex-shrink-0 text-white mr-6 lg:mr-72">
@@ -42,25 +62,42 @@ export default function Navbar(){
      <div className={`w-full block flex-grow lg:flex lg:items-center lg:w-auto ${isOpen ? "block" : "hidden"}`} >
        <div className="text-base font-medium lg:flex-grow dolcepro">
        
-         <a href="#projects" className="block mt-4 lg:inline-block lg:mt-0 text-white-200 mr-4">
+         <a onClick={handleClick} href="#projects" className="block mt-4 lg:inline-block lg:mt-0 text-white-200 mr-4">
            Trabajos anteriores
          </a>
-         <a href="#skills" className="block mt-4 lg:inline-block lg:mt-0 text-white-200 mr-4">
+         <a onClick={handleClick} href="#skills" className="block mt-4 lg:inline-block lg:mt-0 text-white-200 mr-4">
            Habilidades
          </a>
-         <a href="#testimonials" className="block mt-4 lg:inline-block lg:mt-0 text-white-200 mr-4">
+         <a onClick={handleClick} href="#testimonials" className="block mt-4 lg:inline-block lg:mt-0 text-white-200 mr-4">
            Testimonios
          </a>
          
        </div>
        <div className="block mt-4 lg:inline-block lg:mt-0">
-         <button className="inline-flex items-center bg-cyan-500 border-0 py-2 px-4 text-white">
+         <button onClick={handleOpenModal}  className="inline-flex items-center bg-cyan-500 border-0 py-2 px-4 text-white">
            ¡Contrátame!
          </button>
        </div>
      </div>
 
    </nav>
+
+
+      {modalOpen && (
+        <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
+          <div className="bg-gray-900 relative  p-12 ">
+            
+            <XCircleIcon onClick={handleCloseModal} className="h-10 w-10 text-gray-400 absolute top-0 right-0 mt-2 mr-2 cursor-pointer  " />
+
+            <ContactModal />
+
+            
+
+          </div>
+        </div>
+      )}
+
+
     </header>
     )
 }

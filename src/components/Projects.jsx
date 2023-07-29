@@ -25,8 +25,8 @@ const responsive = {
 
 export default function Projects(){
     return(
-      <section id="projects" className="text-gray-400 bg-gray-900 body-font">
-      <div className="container px-5 py-10 mx-auto text-center lg:px-40">
+      <section id="projects" className="text-gray-400 bg-gray-900 body-font  py-20">
+      <div className="container py-20 px-5  mx-auto text-center lg:px-40">
         <div className="flex flex-col w-full ">
           
           <h1 className="sm:text-4xl text-3xl font-medium title-font mb-4 text-white">
@@ -40,6 +40,8 @@ export default function Projects(){
 
         </div>
       </div>
+
+     
 
       <div className="p-9 ">
 

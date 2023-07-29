@@ -2,8 +2,8 @@ import {testimonials} from "../Data-Json/Testimonials"
 
 export default function Testimonials(){
     return(
-        <section id="testimonials">
-      <div className="container px-5 py-10 mx-auto text-center">
+        <section className="py-20" id="testimonials">
+      <div className="container px-5 py-20 mx-auto text-center">
         
         <h1 className="sm:text-4xl text-3xl font-medium title-font text-white mb-12">
           Testimonios de clientes
