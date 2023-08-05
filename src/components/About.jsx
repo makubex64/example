@@ -8,9 +8,9 @@ import cv from "./Stoman-Resume.pdf"
 
 export default function About(){
     return(
-      <section className="mt-36" id="about">
-      <div className="container mx-auto mb-20 flex px-10 py-20 md:flex-row flex-col items-center">
-        <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-12 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+      <section>
+      <div className="container mx-auto mb-20 flex px-10 py-20  md:flex-row flex-col items-center">
+        <div className="div-1 lg:flex-grow  lg:pr-40 md:pr-8 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
           
           <p className="font-medium text-white">Hello World, <span className="text-cyan-500">I´am</span></p>
           <br />
@@ -29,26 +29,29 @@ export default function About(){
           </p>
           
           <div className="flex justify-center ">
+          
             <a
               target="_blank"
               href="https://github.com/makubex64"
-              className=" bg-cyan-500 hover:shadow-cyan-600 transition duration-200 shadow-lg shadow-cyan-500/50  text-white py-2 px-8 rounded-none ">
-              <i class="bi bi-github"></i>
-              <span className="text-sm font-semibold"> GitHub </span>
+              className="github flex items-center justify-center font-medium  py-2 px-8 bg-cyan-500 hover:shadow-cyan-600 transition duration-200 shadow-lg shadow-cyan-500/50  text-white  rounded-none ">
+              <i className="bi bi-github mr-2"></i>
+              <span className="text-sm">GitHub </span>
             </a>
 
-            <button className="rounded-none ml-4 inline-flex text-white border-2 border-cyan-600 hover:shadow-cyan-600 transition duration-200 shadow-lg shadow-cyan-500/50 py-2 px-8"> 
+            <button className="cv flex items-center justify-center font-medium py-2 px-8 rounded-none ml-4  text-white border-2 border-cyan-600 hover:shadow-cyan-600 transition duration-200 shadow-lg shadow-cyan-500/50 "> 
             <a href={cv} download className="text-sm font-semibold">
-            <i class="bi bi-download"></i>
+            <i className="bi bi-download mr-2"></i>
             <span className="text-sm font-semibold"> Download CV</span>
             </a> 
             </button>
             
           </div>
         </div>
-        <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 dolce">
+
+        <div className="div-2 lg:max-w-lg lg:w-full md:w-1/2 w-5/6 dolce">
         <AtomComponent/>
         </div>
+
       </div>
     </section>
     )

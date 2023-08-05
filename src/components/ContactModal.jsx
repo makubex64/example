@@ -1,5 +1,52 @@
+import { useRef, useEffect, useState } from "react";
+import emailjs from "@emailjs/browser";
+import Swal from 'sweetalert2';
 
-export default function ContactModal (){
+
+
+
+
+
+export default function ContactModal ({isOpen, setIsOpen, modalOpen, setModalOpen}){
+	console.log(modalOpen)
+
+const emailRef = useRef();
+const nameRef = useRef();
+const [loading, setLoading] = useState(false);
+
+const SERVICE_ID = "service_sgxvmsg";
+const TEMPLATE_ID = "template_wbe4kmv";
+const PUBLIC_KEY = "_fR8lq1OxRSr2_fI3";
+
+
+	const handleOnSubmit = (e) => {
+    e.preventDefault();
+    setIsOpen(!isOpen)
+
+    emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, e.target, PUBLIC_KEY)
+      .then((result) => {
+
+        console.log(result.text);
+        Swal.fire({
+          icon: "success",
+          title: "Message Sent Successfully",
+        })
+
+      }, (error) => {
+        console.log(error.text);
+        Swal.fire({
+          icon: "error",
+          title:  "Ooops, something went wrong",
+          text: error.text,
+        })
+      });
+
+    e.target.reset()
+    setModalOpen(!modalOpen)
+    
+
+  };
+
 
 
 	return(
@@ -7,14 +54,15 @@ export default function ContactModal (){
 		<>
 		<form
           
+          onSubmit={handleOnSubmit}
           name="contact"
           className="w-96 max-w-xs   ">
           <h2 className="text-white sm:text-4xl text-3xl mb-1 font-medium title-font">
-            ¡Let´s Talk dolcepro!
+            ¡Let´s Talk!
           </h2>
           <hr/>
           <div className="relative mb-4">
-            <label htmlFor="name" className="leading-7 text-sm text-gray-400">
+            <label  htmlFor="name" className="leading-7 text-sm text-gray-400">
               Nombre
             </label>
             <input

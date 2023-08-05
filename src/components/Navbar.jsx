@@ -1,8 +1,6 @@
 import { FireIcon } from "@heroicons/react/24/outline";
 import { XCircleIcon } from "@heroicons/react/24/outline";
-
 import {useState} from 'react'
-
 import ContactModal from './ContactModal'
 
 
@@ -27,11 +25,11 @@ export default function Navbar(){
 
 
     return(
-    <header className="bg-gray-800 sticky md:sticky top-0 z-10">
+    <header id="" className="bg-gray-800 sticky md:sticky top-0 z-10">
       <nav className="flex items-center justify-between flex-wrap p-4">
 
      <div className="flex items-center flex-shrink-0 text-white mr-6 lg:mr-72">
-      <a href="#about" className="font-semibold text-lg">
+      <a href="#home" className="font-semibold text-lg">
       <FireIcon className="h-6 w-6 text-cyan-600 inline" />
       <span>Portfolio</span>
       </a>
@@ -62,14 +60,14 @@ export default function Navbar(){
      <div className={`w-full block flex-grow lg:flex lg:items-center lg:w-auto ${isOpen ? "block" : "hidden"}`} >
        <div className="text-base font-medium lg:flex-grow dolcepro">
        
+         <a onClick={handleClick} href="#about" className="block mt-4 lg:inline-block lg:mt-0 text-white-200 mr-4">
+           About
+         </a>
          <a onClick={handleClick} href="#projects" className="block mt-4 lg:inline-block lg:mt-0 text-white-200 mr-4">
-           Trabajos anteriores
+           Projects
          </a>
          <a onClick={handleClick} href="#skills" className="block mt-4 lg:inline-block lg:mt-0 text-white-200 mr-4">
-           Habilidades
-         </a>
-         <a onClick={handleClick} href="#testimonials" className="block mt-4 lg:inline-block lg:mt-0 text-white-200 mr-4">
-           Testimonios
+           Skills
          </a>
          
        </div>
@@ -89,7 +87,12 @@ export default function Navbar(){
             
             <XCircleIcon onClick={handleCloseModal} className="h-10 w-10 text-gray-400 absolute top-0 right-0 mt-2 mr-2 cursor-pointer  " />
 
-            <ContactModal />
+            <ContactModal 
+            isOpen={isOpen}
+            setIsOpen={setIsOpen}
+            modalOpen={modalOpen} 
+            setModalOpen={setModalOpen}  
+            />
 
             
 
