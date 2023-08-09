@@ -1,13 +1,12 @@
 import {skills} from "../Data-Json/Skills";
 import               '../Skills.css'
-import myImage from '../assets/cute-robot-flaying-space.jpg'
-import Particles from '../assets/particles.png'
-
+import Robot from '../assets/cute-robot-flaying-space.jpg'
+import Halo from '../assets/dolce.png'
 
 export default function Skills(){
     return(
         <section className="py-20" id="skills">
-      <div className="container py-20 px-5  mx-auto"> 
+      <div className="container py-20 px-5  mx-auto mb-80"> 
         <div className="text-center  ">
           
           <h1 className="sm:text-4xl text-3xl font-medium title-font text-white mb-4">
@@ -23,18 +22,21 @@ export default function Skills(){
         
 
         <div className="container mt-80">
+        
 
          <div className="bg-img">
 
-         <img className="myImage"  src={myImage} alt=""/>
-         <img className="particles"  src={Particles} alt=""/>
+         <img className="robot"  src={Robot} alt=""/>
+         <img className="circle-halo"  src={Halo} alt=""/>
+
 
          <div className="right-circle  ">
-          <img  src="https://www.vectorlogo.zone/logos/figma/figma-icon.svg" />
-          <img  src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" />
-          <img  src="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg" />
-          <img  src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg" />
-          <img  src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" />
+          <img className="circle-img "  src="https://www.vectorlogo.zone/logos/figma/figma-icon.svg" />
+          <img className="circle-img"  src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" />
+          <img className="circle-img"  src="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg" />
+          <img className="circle-img"  src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg" />
+          <img className="circle-img"  src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" />
+          
 
         </div>
 

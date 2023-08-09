@@ -1,31 +1,10 @@
-import Carousel from 'react-multi-carousel';
-import 'react-multi-carousel/lib/styles.css';
-
 import { projects } from "../Data-Json/Data-Json";
-
-const responsive = {
-  desktop: {
-    breakpoint: { max: 3000, min: 1024 },
-    items: 3,
-    slidesToSlide: 3 // optional, default to 1.
-  },
-  tablet: {
-    breakpoint: { max: 1024, min: 464 },
-    items: 2,
-    slidesToSlide: 2 // optional, default to 1.
-  },
-  mobile: {
-    breakpoint: { max: 464, min: 0 },
-    items: 1,
-    slidesToSlide: 1 // optional, default to 1.
-  }
-};
-
 
 
 export default function Projects(){
     return(
-      <section id="projects" className="text-gray-400 bg-gray-900 body-font  py-20">
+     
+ <section id="projects" className="text-gray-400 bg-gray-900 body-font  py-20">
       <div className="container py-20 px-5  mx-auto text-center lg:px-40">
         <div className="flex flex-col w-full ">
           
@@ -43,20 +22,9 @@ export default function Projects(){
 
      
 
-      <div className="p-9 ">
+      <div className="p-9 grid grid-cols-3 gap-4">
 
-        <Carousel        
-        responsive={responsive}
-        infinite={true}
-        keyBoardControl={true}
-        customTransition="all 1.5"
-        transitionDuration={500}
-        containerClass="carousel-container"
-        removeArrowOnDeviceType={["tablet", "mobile"]}
-        dotListClass="custom-dot-list-style"
-        itemClass="carousel-item-padding-40-px"
-
-      >
+       
 
        {projects.map((project) => {
 
@@ -64,7 +32,7 @@ export default function Projects(){
                    <a
                      href={project.link}
                      key={project.image}
-                     className="flex space-x-4 max-w-sm ">
+                     className="flex space-x-4 max-w-sm my-2 hover:shadow-cyan-600 transition duration-200 shadow-lg ">
                      <div className="flex relative ">
                        <img
                          alt="gallery"
@@ -91,10 +59,9 @@ export default function Projects(){
                      </div>
                    </a>
                  )})}
-        </Carousel>
+       
 
       </div>  
 
-    </section>
-    )
+    </section>    )
 }

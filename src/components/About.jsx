@@ -1,58 +1,37 @@
-import AtomComponent from "./AtomComponent"
-import { CodeBracketIcon } from "@heroicons/react/24/outline";
-import cv from "./Stoman-Resume.pdf"
-
-
-
-
+import Person from '../assets/person.png'
 
 export default function About(){
-    return(
-      <section>
-      <div className="container mx-auto mb-20 flex px-10 py-20  md:flex-row flex-col items-center">
-        <div className="div-1 lg:flex-grow  lg:pr-40 md:pr-8 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-          
-          <p className="font-medium text-white">Hello World, <span className="text-cyan-500">I´am</span></p>
-          <br />
-          <h3 className="text-cyan-500 text-4xl font-bold ">Jorge Adarmes</h3>
-          <h1 className="mt-2 text-white font-medium text-xl ">Frontend React <span className="text-cyan-500  text-brillo font-bold">HOOKS <CodeBracketIcon className="h-6 w-6 inline text-cyan-500 font-bold" /></span>  </h1>
+
+	return(
+		<section className="text-gray-400 bg-gray-900 body-font  py-20" id="about">
+		<div className="py-20 mb-20 items-center text-center ">
 
 
+		<div className="grid grid-cols-2 gap-4">
+		  <div>
+		    <img  src={Person} />
+		  </div>
+		  <div className="flex flex-col justify-center">
+		    <h1 className="mt-2 text-white font-medium text-xl ">Frontend React <span className="text-cyan-500  text-brillo font-bold">HOOKS </span>  </h1>
 
-          
-          <p className="mb-8  text-slate-50">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui
-            laborum quasi, incidunt dolore iste nostrum cupiditate voluptas?
-            Laborum, voluptas natus? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui
-            laborum quasi, incidunt dolore iste nostrum cupiditate voluptas?
-            Laborum, voluptas natus? 
-          </p>
-          
-          <div className="flex justify-center ">
-          
-            <a
-              target="_blank"
-              href="https://github.com/makubex64"
-              className="github flex items-center justify-center font-medium  py-2 px-8 bg-cyan-500 hover:shadow-cyan-600 transition duration-200 shadow-lg shadow-cyan-500/50  text-white  rounded-none ">
-              <i className="bi bi-github mr-2"></i>
-              <span className="text-sm">GitHub </span>
-            </a>
+          	<p className="mt-10 px-20 mx-auto leading-relaxed text-base flex">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo
+            facilis repellat ab cupiditate alias vero aliquid obcaecati quisquam
+            fuga dolore. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui laborum quasi, incidunt dolore iste nostrum cupiditate voluptas? Laborum, voluptas natus? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui laborum quasi, incidunt dolore iste nostrum cupiditate voluptas? Laborum, voluptas natus?
+          </p> 
+		  </div>
+		</div>
 
-            <button className="cv flex items-center justify-center font-medium py-2 px-8 rounded-none ml-4  text-white border-2 border-cyan-600 hover:shadow-cyan-600 transition duration-200 shadow-lg shadow-cyan-500/50 "> 
-            <a href={cv} download className="text-sm font-semibold">
-            <i className="bi bi-download mr-2"></i>
-            <span className="text-sm font-semibold"> Download CV</span>
-            </a> 
-            </button>
-            
-          </div>
-        </div>
+		<div className="flex items-center ">
+				
+			
+			          
+		</div>
 
-        <div className="div-2 lg:max-w-lg lg:w-full md:w-1/2 w-5/6 dolce">
-        <AtomComponent/>
-        </div>
+			
 
-      </div>
-    </section>
-    )
+		</div>
+			
+		</section>
+		)
 }

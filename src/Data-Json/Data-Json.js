@@ -1,9 +1,8 @@
-import { v4 as uuidv4 } from 'uuid';
 
 
 export const projects = [
     {
-      key: uuidv4(),
+      
       title: "React Reserve",
       subtitle: "MERN Stack",
       description:
@@ -17,7 +16,7 @@ export const projects = [
       ]
     },
     {
-      key: uuidv4(),
+      
       title: "React Tracks",
       subtitle: "React and Python",
       description:
@@ -31,7 +30,7 @@ export const projects = [
       ]
     },
     {
-      key: uuidv4(),
+      
       title: "DevChat",
       subtitle: "React and Firebase",
       description:
@@ -45,7 +44,7 @@ export const projects = [
       ]
     },
     {
-      key: uuidv4(),
+      
       title: "Epic Todo App",
       subtitle: "React Hooks",
       description:
