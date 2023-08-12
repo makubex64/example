@@ -53,6 +53,44 @@ nav a:hover{
       }
   }
 
+/*about  */
+@media (max-width: 767px) {
+        .container {
+        position: relative;
+
+      }
+
+      .about-1 {      
+        
+        position: absolute;
+        opacity: 0.6;
+        z-index: 1;
+        
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        
+        width: 100%;
+
+      }
+
+
+
+
+
+
+      .about-2 {
+        
+        
+        position: relative;
+        
+        z-index: 2;
+        
+      }
+  }
+
+
+
 
 /*buttons github and donwload cv, responsivo*/
 @media (max-width: 420px) {

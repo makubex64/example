@@ -6,7 +6,7 @@ import cv from "./Stoman-Resume.pdf"
 
 
 
-export default function Home(){
+export default function Home(){ 
     return(
       <section>
       <div className="container mx-auto mb-20 flex px-10 py-40  md:flex-row flex-col items-center">
