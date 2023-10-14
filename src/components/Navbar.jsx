@@ -57,7 +57,7 @@ export default function Navbar(){
        </button>
      </div>
 
-     <div className={`w-full block flex-grow lg:flex lg:items-center lg:w-auto ${isOpen ? "block" : "hidden"}`} >
+     <div className={` w-full block flex-grow lg:flex lg:items-center lg:w-auto ${isOpen ? "block" : "hidden"}`} >
        <div className="text-base font-medium lg:flex-grow dolcepro">
        
          <a onClick={handleClick} href="#about" className="block mt-4 lg:inline-block lg:mt-0 text-white-200 mr-4">
@@ -68,6 +68,9 @@ export default function Navbar(){
          </a>
          <a onClick={handleClick} href="#skills" className="block mt-4 lg:inline-block lg:mt-0 text-white-200 mr-4">
            Skills
+         </a>
+         <a onClick={handleClick} href="" className="block mt-4 lg:inline-block lg:mt-0 text-white-200 mr-4">
+           Services
          </a>
          
        </div>

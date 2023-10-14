@@ -3,6 +3,8 @@ import Home         from './components/Home';
 import About        from './components/About'
 import Projects     from "./components/Projects";
 import Skills       from "./components/Skills";
+import Services     from "./components/Services";
+import Footer       from './components/Footer'
 
 
 function App() {
@@ -17,6 +19,8 @@ function App() {
       <About />
       <Projects />
       <Skills />
+      <Services />
+      <Footer />
       
       
     </main>

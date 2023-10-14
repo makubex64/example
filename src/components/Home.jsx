@@ -9,8 +9,8 @@ import cv from "./Stoman-Resume.pdf"
 export default function Home(){ 
     return(
       <section>
-      <div className="container mx-auto mb-20 flex px-10 py-40  md:flex-row flex-col items-center">
-        <div className="py-20 div-1 lg:flex-grow  lg:pr-40 md:pr-8 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+      <div className="container mx-auto  flex px-10 py-40  md:flex-row flex-col items-center">
+        <div className=" div-1 lg:flex-grow  lg:pr-40 md:pr-8 flex flex-col md:items-start md:text-left   items-center text-center">
           
           <p className="font-medium text-white">Hello World, <span className="text-cyan-500">I´am</span></p>
           <br />

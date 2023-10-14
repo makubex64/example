@@ -7,7 +7,7 @@ export const projects = [
       subtitle: "MERN Stack",
       description:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
-      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRj2IyKfL3yjS-Qf4n423D-PHbpUJ-3E1TP9Q&usqp=CAU",
+      image: "https://cdn.dribbble.com/users/2287821/screenshots/18310686/media/a55986187ae22dddbf0650758ca2d4cb.png?resize=400x300&vertical=center",
       link: "",
       skills: [
         "https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg",
@@ -21,7 +21,7 @@ export const projects = [
       subtitle: "React and Python",
       description:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
-      image: "https://esports.eldesmarque.com/wp-content/uploads/2019/09/LoL2.jpg",
+      image: "https://www.dreamhost.com/static/85b423bc20d70e9a2a14f8a149fc7fcc/6b2c9/hero.jpg",
       link: "",
       skills: [
         "https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg",
