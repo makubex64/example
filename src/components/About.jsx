@@ -1,5 +1,7 @@
-import Person from '../assets/person.png'
+import Person              from '../assets/person.png'
 import { CommandLineIcon } from "@heroicons/react/24/outline";
+import Atropos from 'atropos/react';
+import 'atropos/css';
 
 
 export default function About(){
@@ -12,7 +14,17 @@ export default function About(){
 
 		<div className="flex flex-wrap">
 		  <div className="about-1 md:max-lg:w-2/5  lg:w-1/3  flex items-center ">
-				<img className="myself-Image"  src={Person} />
+
+		  <Atropos
+		   shadow={false}
+		   highlight={true}
+		   rotateXInvert={true}
+		   rotateYInvert={true}
+		   duration = {500}
+		  >
+				<img className="myself-Image" data-atropos-offset="1" src={Person} />
+      </Atropos>
+
 		  </div>
 
 		  <div className="about-2 pl-12 pr-12  md:max-lg:w-3/5 lg:w-2/3 flex flex-col justify-center ">
@@ -26,7 +38,7 @@ export default function About(){
 				</h1>
 
 		    	
-		    	<p className="    leading-normal mt-10  mx-auto leading-relaxed text-base ">
+		    	<p className=" allsides-8   leading-normal mt-10  mx-auto leading-relaxed text-base ">
 		            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo
 		            facilis repellat ab cupiditate alias vero aliquid obcaecati quisquam
 		            fuga dolore. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui laborum quasi, incidunt dolore iste nostrum cupiditate voluptas? Laborum, voluptas natus? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui laborum quasi, incidunt dolore iste nostrum cupiditate voluptas? Laborum, voluptas natus?

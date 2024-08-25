@@ -6,9 +6,9 @@
     --electron-color-hex: #99f8ff;
     --electron-size : calc(var(--atom-size) / 25);
     --electron-orbit-size : calc(var(--atom-size) / 2.5);
-    --electron-speed : 3.9s;
-    --electron-speed-alpha : 3s;
-    --electron-speed-omega : 2.8s;
+    --electron-speed : 6s;
+    --electron-speed-alpha : 5s;
+    --electron-speed-omega : 6s;
 }
 
 
@@ -93,38 +93,38 @@
 @keyframes electron-orbit {
     0% {
 
-        box-shadow: inset 2px 4px 6px 4px rgba(var(--atom-color-rgb), .1), inset 2px 4px 6px 4px rgba(var(--atom-color-rgb), .1) ;
-        border-top: solid rgba(var(--atom-color-rgb), .5) 1px;
-        border-right: solid rgba(var(--atom-color-rgb), .35) 2px;
-        border-bottom: solid rgba(var(--atom-color-rgb), .2) 4px;
-        border-left: solid rgba(var(--atom-color-rgb), 0) 2px;
+        box-shadow: inset 2px 3px 2px 4px rgba(var(--atom-color-rgb), .2), inset 2px 3px 2px 4px rgba(var(--atom-color-rgb), .2) ;
+        border-top: solid rgba(var(--atom-color-rgb), .1) .2px;
+        border-right: solid rgba(var(--atom-color-rgb), .2) .2px;
+        border-bottom: solid rgba(var(--atom-color-rgb), .3) .4px;
+        border-left: solid rgba(var(--atom-color-rgb), 0) .2px;
     }
     25% {
-        box-shadow: inset 4px 6px 8px 6px rgba(var(--atom-color-rgb), .1), inset 2px 4px 6px 4px rgba(var(--atom-color-rgb), .1) ;
-        border-top: solid rgba(var(--atom-color-rgb), .35) 1px;
-        border-right: solid rgba(var(--atom-color-rgb), .2) 2px;
-        border-bottom: solid rgba(var(--atom-color-rgb), 0) 4px;
-        border-left: solid rgba(var(--atom-color-rgb), .5) 2px;
+        box-shadow: inset 2px 2px 2px 2px rgba(var(--atom-color-rgb), .2), inset 2px 2px 2px 2px rgba(var(--atom-color-rgb), .2) ;
+        border-top: solid rgba(var(--atom-color-rgb), .2) .1px;
+        border-right: solid rgba(var(--atom-color-rgb), .3) .2px;
+        border-bottom: solid rgba(var(--atom-color-rgb), 0) .4px;
+        border-left: solid rgba(var(--atom-color-rgb), .1) .2px;
     }
     50% {
-        box-shadow: inset 6px 8px 10px 12px rgba(var(--atom-color-rgb), .1), inset 2px 4px 6px 4px rgba(var(--atom-color-rgb), .1) ;
-        border-top: solid rgba(var(--atom-color-rgb), .2) 1px;
-        border-right: solid rgba(var(--atom-color-rgb), 0) 2px;
-        border-bottom: solid rgba(var(--atom-color-rgb), .5) 4px;
-        border-left: solid rgba(var(--atom-color-rgb), .35) 2px;
+        box-shadow: inset 2px 3px 2px 4px rgba(var(--atom-color-rgb), .2), inset 2px 3px 2px 4px rgba(var(--atom-color-rgb), .2) ;
+        border-top: solid rgba(var(--atom-color-rgb), .3) .1px;
+        border-right: solid rgba(var(--atom-color-rgb), 0) .2px;
+        border-bottom: solid rgba(var(--atom-color-rgb), .1) .4px;
+        border-left: solid rgba(var(--atom-color-rgb), .2) .2px;
     }
     75% {
-        box-shadow: inset 12px 14px 16px 18px rgba(var(--atom-color-rgb), .1), inset 2px 4px 6px 4px rgba(var(--atom-color-rgb), .1) ;
-        border-top: solid rgba(var(--atom-color-rgb), 0) 1px;
-        border-right: solid rgba(var(--atom-color-rgb), .5) 2px;
-        border-bottom: solid rgba(var(--atom-color-rgb), .35) 4px;
-        border-left: solid rgba(var(--atom-color-rgb), .2) 2px;
+        box-shadow: inset 2px 2px 2px 2px rgba(var(--atom-color-rgb), .2), inset 2px 2px 2px 2px rgba(var(--atom-color-rgb), .2) ;
+        border-top: solid rgba(var(--atom-color-rgb), 0) .1px;
+        border-right: solid rgba(var(--atom-color-rgb), .1) .2px;
+        border-bottom: solid rgba(var(--atom-color-rgb), .2) .4px;
+        border-left: solid rgba(var(--atom-color-rgb), .3) .2px;
     }
     100% {
-        box-shadow: inset 2px 4px 6px 4px rgba(var(--atom-color-rgb), .1), inset 2px 4px 6px 4px rgba(var(--atom-color-rgb), .1) ;
-        border-top: solid rgba(var(--atom-color-rgb), .5) 1px;
-        border-right: solid rgba(var(--atom-color-rgb), .35) 2px;
-        border-bottom: solid rgba(var(--atom-color-rgb), .2) 4px;
+        box-shadow: inset 2px 3px 2px 4px rgba(var(--atom-color-rgb), .2), inset 2px 3px 2px 4px rgba(var(--atom-color-rgb), .2) ;
+        border-top: solid rgba(var(--atom-color-rgb), .1) 1px;
+        border-right: solid rgba(var(--atom-color-rgb), .2) 2px;
+        border-bottom: solid rgba(var(--atom-color-rgb), .3) 4px;
         border-left: solid rgba(var(--atom-color-rgb), 0) 2px;
         
     }
@@ -144,7 +144,7 @@
     top: 50%;
     left: calc(var(--electron-size) / -1);
     transform: scale(1);
-    animation: calc(var(--electron-speed) * 2) electron infinite ease-in-out;
+    animation: calc(var(--electron-speed) * 4) electron infinite ease-in-out;
 }
 .atom .electron-alpha::after { animation: calc(var(--electron-speed-alpha) * 3) electron infinite ease-in-out; }
 .atom .electron-omega::after { animation: calc(var(--electron-speed-omega) * 3) electron infinite ease-in-out; }

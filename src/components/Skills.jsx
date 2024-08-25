@@ -1,5 +1,5 @@
-import {skills} from "../Data-Json/Skills";
-import               '../Skills.css'
+import {skills} from "../Data-Json/Data-Json";
+import               '../Styles/Skills.css'
 import Robot from '../assets/cute-robot-flaying-space.jpg'
 import Halo from '../assets/dolce.png'
 

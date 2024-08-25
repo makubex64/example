@@ -1,4 +1,4 @@
-import "../Atom.css"
+import "../Styles/Atom.css"
 
 export default function AtomComponent (){
     return(
