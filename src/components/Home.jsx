@@ -1,6 +1,6 @@
 import AtomComponent from "./AtomComponent"
 import { CodeBracketIcon } from "@heroicons/react/24/outline";
-import cv from "../assets/cv.pdf"
+import cv from "../assets/CV.pdf"
 
 
 
