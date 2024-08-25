@@ -34,7 +34,7 @@ export default function Skills(){
           <img className="circle-img "  src="https://www.vectorlogo.zone/logos/figma/figma-icon.svg" />
           <img className="circle-img"  src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" />
           <img className="circle-img"  src="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg" />
-          <img className="circle-img"  src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg" />
+          <img className="circle-img"  src="https://img.icons8.com/?size=100&id=EzPCiQUqWWEa&format=png&color=000000" />
           <img className="circle-img"  src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" />
           
 

@@ -1,4 +1,5 @@
 import { projects } from "../Data-Json/Data-Json";
+import { motion } from 'framer-motion';
 
 
 export default function Projects(){
@@ -24,46 +25,38 @@ export default function Projects(){
 
      
 
-      <div className="grid gap-4  lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-2   px-10">
-
-       
-
-       {projects.map((project) => {
-
-        return(
-                   <a
-                     href={project.link}
-                     key={project.image}
-                     className="flex my-2 hover:shadow-cyan-600 z-0 transition duration-200 shadow-lg ">
-                     <div className="flex relative ">
-                       <img
-                         alt="gallery"
-                         className=" absolute inset-0 w-full h-full object-cover object-center"
-                         src={project.image}
-                       />
-                       <div className="border-solid border-3 border-cyan-500 absolute  overflow-hidden bg-gradient-to-r from-cyan-950 to-sky-950 transition duration-300  px-10 py-8 relative z-10 w-full border-2 border-gray-800 bg-gray-900 opacity-0  hover:opacity-90">
-                         <h2 className="hover:opacity-100  text-sm title-font font-medium text-cyan-400 ">
-                           {project.subtitle}
-                         </h2>
-                         <h1 className="hover:opacity-100 title-font text-lg font-medium text-white mb-3">
-                           {project.title}
-                         </h1>
-                         <p className="hover:opacity-100 leading-relaxed">{project.description}</p>
-
-                         {
-                          project.skills.map((skill)=>(
-                              <img key={skill} className="inline-block me-6 mt-3 rounded-md" style={{width:40, height:40}} src={skill} />
-                            ))
-                         }
-
-       
-                       </div>
-                     </div>
-                   </a>
-                 )})}
-       
-
-      </div>  
+      <div className="container mx-auto px-10 py-8">
+      <h2 className="text-3xl font-bold text-center mb-8 text-gray-800">Mis Proyectos UX/UI</h2>
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        {projects.map((project) => (
+          <motion.div
+            key={project.id}
+            className="rounded-lg overflow-hidden shadow-lg hover:shadow-xl hover:shadow-cyan-500/40 transition-shadow duration-300 ease-in-out"
+            whileHover={{ y: -5 }}
+          >
+            <img 
+              src={project.image} 
+              alt={project.title} 
+              className="w-full h-48 object-cover"
+            />
+            <div className="p-6 bg-gray-800 ">
+              <h3 className="font-bold text-xl mb-2 text-white">{project.title}</h3>
+              <p className="text-white text-sm mb-4">{project.description}</p>
+              <div className="flex flex-wrap gap-2">
+                {project.tags.map((tag) => (
+                  <span 
+                    key={tag} 
+                    className="px-3 py-1 bg-purple-100 text-purple-600 rounded-full text-xs font-semibold"
+                  >
+                    {tag}
+                  </span>
+                ))}
+              </div>
+            </div>
+          </motion.div>
+        ))}
+      </div>
+    </div>
 
     </section>    )
 }

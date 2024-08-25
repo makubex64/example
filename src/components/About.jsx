@@ -7,7 +7,7 @@ import 'atropos/css';
 export default function About(){
 
 	return(
-		<section className="text-gray-400 bg-gray-900 body-font  py-20" id="about">
+		<section className="text-gray-400 bg-gray-900 body-font py-20" id="about">
 		<div className="container mx-auto flex flex-row py-20 mb-2 items-center text-center ">
 
 
