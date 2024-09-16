@@ -12,13 +12,13 @@ function App() {
 
   return (
     <>
-      <main id="home" className="text-gray-400 bg-gray-900 body-font" >
+      <main id="home" className="bg-gray-900 body-font" >
       
       <Navbar />
       <Home />
       <About />
       <Projects />
-      <Skills />
+      {/* <Skills /> */}
       <Services />
       <Footer />
       

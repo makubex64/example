@@ -13,7 +13,7 @@ export default function About(){
 
 
 		<div className="flex flex-wrap">
-		  <div className="about-1 md:max-lg:w-2/5  lg:w-1/3  flex items-center ">
+		  <div className="about-1 w-1/2  flex items-center ">
 
 		  <Atropos
 		   shadow={false}
@@ -22,26 +22,33 @@ export default function About(){
 		   rotateYInvert={true}
 		   duration = {500}
 		  >
-				<img className="myself-Image" data-atropos-offset="1" src={Person} />
+				<img className="myself-Image " data-atropos-offset="1" src={Person} />
       </Atropos>
 
 		  </div>
 
-		  <div className="about-2 pl-12 pr-12  md:max-lg:w-3/5 lg:w-2/3 flex flex-col justify-center ">
+		  <div className="w-1/2 about-2 pl-12 pr-12   flex flex-col justify-center ">
 				
-				<h1 className="mt-2 text-white font-medium text-xl ">
-				Frontend React 
+				<h1 className="mt-2 text-white font-medium text-3xl ">
+				Acerca de mi como Diseñador 
 				<span className="ml-2 text-cyan-500 text-brillo font-bold"> 
-				 HOOKS 
+				 UX/UI
 				 <CommandLineIcon className="ml-2 h-6 w-6 inline text-cyan-500 " />  
 				</span>
 				</h1>
 
 		    	
-		    	<p className=" allsides-8   leading-normal mt-10  mx-auto leading-relaxed text-base ">
-		            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo
-		            facilis repellat ab cupiditate alias vero aliquid obcaecati quisquam
-		            fuga dolore. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui laborum quasi, incidunt dolore iste nostrum cupiditate voluptas? Laborum, voluptas natus? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui laborum quasi, incidunt dolore iste nostrum cupiditate voluptas? Laborum, voluptas natus?
+		    	<p className=" allsides-8 text-left   leading-normal mt-10  mx-auto leading-relaxed text-base ">
+				Como diseñador UX/UI, me apasiona crear experiencias digitales que sean tanto 
+				estéticamente agradables, minimalistas y con una funcionalidad intuitiva. 
+				He trabajado en proyectos como E-commerce para sitios web y para aplicaciones mobile, 
+				Landing Page entre otros. Utilizo mi conocimiento en investigación de usuarios, 
+				diseño de wireframes y prototipos para crear interfaces intuitivas y visualmente atractivas. 
+				Uso metodologías como Design Thinkin y Double Diamond, UX Discovery para investigaciones
+				mas flexibles, he usado Design System y Atomic Design junto con Design Token para la 
+				escalabilidad y consistencia de proyectos de diseño, he usado herramientas para hacer 
+				procesos de diseño como Whimsical para hacer tareas y flujos de usuarios, de igual manera 
+				con Figjam de FIgma y Miro, y mi herramienta favorita es Figma.
 		        </p> 
 		  </div>
 		</div>

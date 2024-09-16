@@ -32,22 +32,22 @@ export default function Component() {
 
         <div className="hidden lg:flex items-center justify-center flex-grow">
           <a onClick={handleClick} href="#about" className="text-white hover:text-cyan-400 mx-4">
-            About
+            Acerca de
           </a>
           <a onClick={handleClick} href="#projects" className="text-white hover:text-cyan-400 mx-4">
-            Projects
+            Projectos
           </a>
           <a onClick={handleClick} href="#skills" className="text-white hover:text-cyan-400 mx-4">
-            Skills
+            Habilidades
           </a>
           <a onClick={handleClick} href="#services" className="text-white hover:text-cyan-400 mx-4">
-            Services
+            Servicios
           </a>
         </div>
 
         <div className="flex items-center">
           <button onClick={handleOpenModal} className="hidden lg:inline-flex items-center bg-cyan-500 hover:bg-cyan-600 text-white font-bold py-2 px-4 rounded">
-            ¡Contrátame!
+            ¡Escríbeme!
           </button>
           <button
             onClick={() => setIsOpen(!isOpen)}
@@ -86,7 +86,7 @@ export default function Component() {
             Services
           </a>
           <button onClick={handleOpenModal} className="w-full text-left text-white hover:text-cyan-400 px-3 py-2">
-            ¡Contrátame!
+            ¡Escríbeme!
           </button>
         </div>
       </div>
