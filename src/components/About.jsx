@@ -48,7 +48,7 @@ export default function About(){
 				mas flexibles, he usado Design System y Atomic Design junto con Design Token para la 
 				escalabilidad y consistencia de proyectos de diseño, he usado herramientas para hacer 
 				procesos de diseño como Whimsical para hacer tareas y flujos de usuarios, de igual manera 
-				con Figjam de FIgma y Miro, y mi herramienta favorita es Figma.
+				con FigJam de Figma y Miro, y mi herramienta favorita es Figma.
 		        </p> 
 		  </div>
 		</div>

@@ -45,10 +45,14 @@ export default function Component() {
           </a>
         </div>
 
-        <div className="flex items-center">
+        <div className="flex items-center relative">
           <button onClick={handleOpenModal} className="hidden lg:inline-flex items-center bg-cyan-500 hover:bg-cyan-600 text-white font-bold py-2 px-4 rounded">
-            ¡Escríbeme!
+            ¡Escríbeme!            
           </button>
+          <span className="absolute -top-1 -right-1 inline-flex">
+              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
+              <span className="relative inline-flex rounded-full h-3 w-3 bg-green-500"></span>
+            </span>
           <button
             onClick={() => setIsOpen(!isOpen)}
             className="lg:hidden flex items-center px-3 py-2 rounded text-white hover:text-cyan-400"

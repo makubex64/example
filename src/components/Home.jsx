@@ -10,8 +10,8 @@ import Wallpaper from "../assets/wallpaper.png"
 export default function Home(){  
     return(
       <section>
-      <div className="container w-auto  mx-auto   flex px-10   md:flex-row flex-col items-center">
-        <div className="w-2/5  div-1 lg:flex-grow  lg:pr-40 md:pr-8 flex flex-col md:items-start md:text-left   ">
+      <div className="w-full  flex items-center justify-center        ">
+        <div className="w-2/5 px-20 div-1 lg:flex-grow   flex flex-col md:items-start md:text-left   ">
           
           <p className="font-medium text-white">Hello World, <span className="text-cyan-500">soy</span></p>
           
@@ -25,7 +25,7 @@ export default function Home(){
             Me dedico a la creación de productos digitales que resuelven problemas reales y generan un impacto positivo centrados en el usuario.
           </p>
           
-          <div className="flex justify-center  ">
+          <div className="flex justify-center">
           
             <a
               target="_blank"
