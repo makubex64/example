@@ -5,5 +5,5 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()],
 
-  base: '/example/' // Establece la base en '/' para GitHub Pages
+  base: '/example/', // Establece la base en '/' para GitHub Pages
 })
