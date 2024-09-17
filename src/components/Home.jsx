@@ -2,16 +2,53 @@ import AtomComponent from "./AtomComponent"
 import { CodeBracketIcon } from "@heroicons/react/24/outline";
 import cv from "../assets/CV.pdf"
 import Wallpaper from "../assets/wallpaper.png"
+import { motion } from 'framer-motion';
+import { useEffect, useState } from "react"
 
 
 
 
 
-export default function Home(){  
+
+
+export default function Home(){
+  
+  const [isLoading, setIsLoading] = useState(true)
+
+  useEffect(() => {
+    // Simular un tiempo de carga
+    const timer = setTimeout(() => {
+      setIsLoading(false)
+    }, 2000) // 2 segundos de "carga"
+
+    // Limpiar el temporizador si el componente se desmonta
+    return () => clearTimeout(timer)
+  }, [])
+
+  // Reiniciar la carga cuando se refresque la página
+  useEffect(() => {
+    const handleBeforeUnload = () => {
+      setIsLoading(true)
+    }
+
+    window.addEventListener('beforeunload', handleBeforeUnload)
+
+    return () => {
+      window.removeEventListener('beforeunload', handleBeforeUnload)
+    }
+  }, [])
+  
     return(
-      <section>
-      <div className="w-full  flex items-center justify-center        ">
-        <div className="w-2/5 px-20 div-1 lg:flex-grow   flex flex-col md:items-start md:text-left   ">
+      <section className="bg-gradient-to-r from-slate-950 via-slate-800 to-gray-670 ">
+      <div className="w-full  flex items-center justify-center ">
+
+     
+        <motion.div
+        initial={{ x: -1000, opacity: 0 }}
+        animate={{ x: 0, opacity: 1 }}
+        transition={{ type: "spring", stiffness: 100, damping: 20, duration: 0.8 }}  
+        className="w-2/5 px-20 div-1 lg:flex-grow   flex flex-col md:items-start md:text-left   "
+        >
           
           <p className="font-medium text-white">Hello World, <span className="text-cyan-500">soy</span></p>
           
@@ -43,11 +80,16 @@ export default function Home(){
             </button>
             
           </div>
-        </div>
+        </motion.div>
 
-        <div className="div-2 w-3/5    dolce">
+        <motion.div
+        initial={{ x: 1000, opacity: 0 }}
+        animate={{ x: 0, opacity: 1 }}
+        transition={{ type: "spring", stiffness: 100, damping: 20, duration: 0.8, delay: 0.2 }} 
+        className="div-2 w-3/5    dolce"
+        >
         <img className=" " src={Wallpaper} alt={Wallpaper} />
-        </div>
+        </motion.div>
 
       </div>
 
