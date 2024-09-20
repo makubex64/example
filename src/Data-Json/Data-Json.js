@@ -1,20 +1,22 @@
+import AtomicDesign from "../assets/Projects/Atomic-Design.png"
 
 
 export const projects = [
     {
       
-      title: "React Reserve",
-      subtitle: "MERN Stack",
+      title: "Atomic Design System",
+      subtitle: "",
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
-      image: "https://cdn.dribbble.com/users/2287821/screenshots/18310686/media/a55986187ae22dddbf0650758ca2d4cb.png?resize=400x300&vertical=center",
-      link: "",
+        "Este sistema de diseño fue construido desde cero para afrontar una necesidad empresarial.",
+      image: AtomicDesign,
+      behance:"",
+      figma:"",
       skills: [
         "https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg",
         "https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg",
         "https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg",
       ],
-      tags: ["UX Research", "UI Design", "Prototyping"],
+      tags: ["SaaS", "UI Design", "Atomic Design"],
     },
     {
       

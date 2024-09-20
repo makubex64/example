@@ -5,10 +5,10 @@ import { motion } from 'framer-motion';
 export default function Projects(){
     return(
      
- <section id="projects" className="text-gray-400 bg-gray-900 body-font py-20">
+ <section id="projects" className="text-gray-400 bg-gray-900 body-font  ">
 
-      <div className="container my-12 mx-auto px-4 md:px-12 text-center ">
-        <div className="flex flex-wrap  lg:-mx-4 ">
+      <div className="container  px-20 md:px-12 text-center bg-cyan-500">
+        <div className="flex flex-wrap  lg:-mx-4 bg-cyan-500">
           
           <h1 className="g:w-2/3 mx-auto sm:text-4xl text-3xl font-medium title-font mb-4 text-white ">
             Aplicaciones que he construido
@@ -25,23 +25,25 @@ export default function Projects(){
 
      
 
-      <div className="container mx-auto px-10 py-8">
+      <div className="container mx-auto px-10 mt-20">
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
         {projects.map((project) => (
           <motion.div
             key={project.id}
-            className="rounded-lg overflow-hidden shadow-lg hover:shadow-xl hover:shadow-cyan-500/40 transition-shadow duration-300 ease-in-out"
+            className="rounded-lg flex flex-col  bg-red-500 overflow-hidden shadow-lg hover:shadow-xl hover:shadow-cyan-500/40 transition-shadow duration-300 ease-in-out"
             whileHover={{ y: -5 }}
           >
             <img 
               src={project.image} 
-              alt={project.title} 
-              className="w-full h-48 object-cover"
+              alt={project.title}
+              width={400}
+              height={200} 
+              className="w-full  object-cover h-48"
             />
-            <div className="p-6 bg-gray-800 ">
+            <div className="p-6 h-full bg-cyan-800 ">
               <h3 className="font-bold text-xl mb-2 text-white">{project.title}</h3>
               <p className="text-white text-sm mb-4">{project.description}</p>
-              <div className="flex flex-wrap gap-2">
+              <div className="flex  flex-wrap gap-2 bg-cyan-500">
                 {project.tags.map((tag) => (
                   <span 
                     key={tag} 
