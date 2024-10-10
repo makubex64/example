@@ -8,9 +8,7 @@ export default function About(){
 
 	return(
 		<section className="text-gray-400 bg-gray-900 body-font py-20 " id="about">
-		<div className="container mx-auto flex flex-row py-20 mb-2 items-center text-center bg-cyan-500">
-
-
+		<div className="container mx-auto flex flex-row   items-center text-center ">
 
 		<div className="flex flex-wrap">
 		  <div className="about-1 w-1/2  flex items-center ">

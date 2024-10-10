@@ -1,4 +1,11 @@
-import AtomicDesign from "../assets/Projects/Atomic-Design.png"
+import BehanceImage from "../assets/Image-logo-projects/behance.png";
+import FigmaImage from "../assets/Image-logo-projects/figma.png";
+import AtomicDesign from "../assets/Projects/Atomic-Design.png";
+import FastFood from "../assets/Projects/Fast-Food.png";
+import Lifestyle from "../assets/Projects/Lifestyle.png";
+
+
+
 
 
 export const projects = [
@@ -16,42 +23,48 @@ export const projects = [
         "https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg",
         "https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg",
       ],
-      tags: ["SaaS", "UI Design", "Atomic Design"],
+      tags: ["Atomic Design", "UI Design", "SaaS", "Web"],
+      Behance: BehanceImage,
+      Figma: FigmaImage,
     },
     {
       
-      title: "React Tracks",
-      subtitle: "React and Python",
+      title: "FastFood",
+      subtitle: "",
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
-      image: "https://www.dreamhost.com/static/85b423bc20d70e9a2a14f8a149fc7fcc/6b2c9/hero.jpg",
+        "Fast Food es una aplicación móvil de ventas de comidas a domicilio que opera en una ciudad metropolitana.",
+      image: FastFood,
       link: "",
       skills: [
         "https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg",
         "https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg",
         "https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg",
       ],
-      tags: ["UX Research", "UI Design", "Prototyping"],
+      tags: ["Design Thinking",  "Food Delivery App", "Mobile"],
+      Behance: BehanceImage,
+      Figma: FigmaImage,
     },
     {
       
-      title: "DevChat",
-      subtitle: "React and Firebase",
+      title: "Lifestyle",
+      subtitle: "",
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
-      image: "https://trome.com/resizer/BYDVUo3EwR5q9NkJbdM_CK54srM=/1200x900/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/LT5U633HLVH23GPAPP7DGCZIIQ.jpg",
+        "Lifestyles es una intuitiva website diseñada para inspirar y facilitar la realización de tus sueños y aspiraciones en diseño interior. ",
+      image: Lifestyle,
       link: "",
       skills: [
         "https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg",
         "https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg",
         "https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg",
       ],
-      tags: ["UX Research", "UI Design", "Prototyping"],
+      tags: ["UX Discovery",  "Furniture e-commerce", "Web"],
+      Behance: BehanceImage,
+      Figma: FigmaImage,
     },
     {
       
-      title: "Epic Todo App",
-      subtitle: "React Hooks",
+      title: "App Games",
+      subtitle: "lalala",
       description:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
       image: "https://i1.sndcdn.com/artworks-000476829858-lyfn6d-t500x500.jpg",
@@ -61,18 +74,20 @@ export const projects = [
         "https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg",
         "https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg",
       ],
-      tags: ["UX Research", "UI Design", "Prototyping"],
+      tags: ["Double Diamond", "Video game marketplace", "Mobile"],
+      Behance: BehanceImage,
+      Figma: FigmaImage,
     },
   ];
 
 export const ServicesData = [
         {
-        name: "Design UX/UI",        
+        name: "UX/UI Designer",        
         quote: "I just wanted to share a quick note and let you know that you guys do a really good job.",
         image: "https://i.pinimg.com/564x/63/a7/b1/63a7b1894b3210d07e434e9d12170586.jpg"
     },
     {
-        name: "Design Web",        
+        name: "Web and mobile designer",        
         quote: "I just wanted to share a quick note and let you know that you guys do a really good job. ",
         image: "https://img.freepik.com/premium-photo/website-interface-browser-computer-web-purple-3d-scene-irendering-premium-photo_85504-46.jpg"
         

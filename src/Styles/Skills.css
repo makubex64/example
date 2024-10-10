@@ -1,23 +1,141 @@
-.container .bg-img{
-  position: relative;  
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  
+/* astronauta */
+.container-skills .astronauta {
+  width: 230px;
+  position: absolute;
+  top: 100px;
+  left: 0;
+  animation: moveUpDownAstronauta 1s ease-in-out infinite;  
+}
+
+@keyframes moveUpDownAstronauta {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-1.5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 
 
 
-.container .bg-img .robot{
+
+/*estrellas*/
+.estrella{
+	width: 2px;
+	height: 2px;
+	background: #fff;
+	position: absolute;
+	top: 20%;
+	left: 40%;
+	border-radius: 50%;
+}
+
+.primera{
+	top: 50%;
+	left: 20%;
+}
+.segunda{
+	top: 20%;
+	left: 49%;
+}
+.tercera{
+	top: 60%;
+	left: 80%;
+}
+.cuarta{
+	top: 70%;
+	left: 99%;
+}
+.quinta{
+	top: 10%;
+	left: 10%;
+}
+.sexta{
+	top: 70%;
+	left: 1%;
+}
+.septima{
+	top: 10%;
+	left: 80%;
+}
+
+.octava{
+	top: 80%;
+	left: 50%;
+}
+.novena{
+	top: 30%;
+	left:70%;
+}
+.decima{
+	top: 80%;
+	left: 30%;
+}	
+
+.estrella:nth-child(2n){
+	animation: estrella-par 20s infinite;
+}
+
+@keyframes estrella-par{
+	14%{
+		box-shadow: 0 0 3px 3px rgba(90, 51, 180, 0.075);
+	}
+
+	80%{
+		box-shadow: 0 0 20px 15px rgba(63, 38, 131, 0.3);
+
+	}
+}
+
+.estrella:nth-child(2n+1){
+	animation: estrella-impar 6s infinite;
+}
+@keyframes estrella-impar{
+	10%{
+		box-shadow: 0 0 3px 3px rgba(177, 34, 212, 0.3);
+	}
+
+	50%{
+		box-shadow: 0 0 20px 10px rgba(89, 34, 110, 0.3);
+
+	}
+}
+
+
+.container-skills{
+  position: relative;  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120vh;
+  overflow: hidden;
+}
+
+
+
+
+/* habilidades que brillan alrededor del astronauta */
+.right-circle img, .left-cirle img{
+
+  
+  background: white;
+  box-shadow: 0px 0px 60px rgba(197, 64, 142, 0.541),
+              0px 0px 40px rgba(64, 159, 197, 0.459);
+                                
+ }
+
+
+
+.container-skills .robot{
   display: block;
   width: 200px;
   height: 200px;
   border-radius: 100%;  
   box-shadow: 0 0px 20px  #314755, 0 0px 30px #26a0da, 0 0px 40px  #cc2b5e;
-  animation: moveUpDown 6s ease-in-out infinite;
-
-
-  
+  animation: moveUpDown 2.5s ease-in-out infinite;  
 }
 
 @keyframes moveUpDown {
@@ -33,7 +151,7 @@
 }
 
 
-.container .bg-img .circle-halo{
+.container-skills .circle-halo{
   position: absolute;
   mix-blend-mode: screen;
   width: 315px;
